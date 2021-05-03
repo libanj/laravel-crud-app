@@ -3,7 +3,7 @@
 
 @section('content')
 
-<form action="/notes/update" method="POST">
+<form method="POST">
 @csrf
 	<div class="row flex-column">
 		<h3>Enter Notes</h3>
@@ -20,8 +20,8 @@
 	</div>
 	@endforeach
 	<div class="row justify-content-between">
-		<button type="submit" name="action" class="btn btn-primary" value="update">Update</button>
-		<button type="submit" name="action" class="btn btn-danger" value="delete">Delete</button>
+		<button type="submit" formaction="/notes/update" name="action" class="btn btn-primary" value="update">Update</button>
+		<button type="submit" formaction="/notes/delete" name="action" class="btn btn-danger" value="delete">Delete</button>
 	</div>
 </form>
 

@@ -24,4 +24,4 @@ Route::get('notes/display', 'App\Http\Controllers\NotesController@index');
 Route::get('notes/display/{id}', ['uses' => 'App\Http\Controllers\NotesController@retrieve']);
 Route::post('notes', 'App\Http\Controllers\NotesController@store');
 Route::post('notes/update', 'App\Http\Controllers\NotesController@update');
-Route::post('notes/update', 'App\Http\Controllers\NotesController@delete');
+Route::post('notes/delete', 'App\Http\Controllers\NotesController@delete');
