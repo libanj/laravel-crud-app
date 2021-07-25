@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.layout');
-});
+Route::get('/', 'App\Http\Controllers\NotesController@index');
 
 Route::get('notes/create', 'App\Http\Controllers\NotesController@create');
 Route::get('notes/display', 'App\Http\Controllers\NotesController@index');
